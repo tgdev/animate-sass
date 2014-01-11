@@ -47,6 +47,19 @@ This file is where the base `.animated` css rules are defined as well as a requi
 
 All individual animation modules are kept in their own [Sass partials](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#partials) so they can be found easily. You shouldn't need to edit these as they are part of the animate.css library.
 
+###Bower Support
+Add animate-sass to your project using [Bower](http://bower.io) 
+
+bower.json dependency
+````
+"dependencies": {
+  "animate-sass": "0.3.0"
+}
+````
+
+Command line 
+`bower install animate-sass`
+
 
 ##Usage
 
@@ -88,6 +101,8 @@ You can [check out the original animate.css here](http://daneden.me/animate). Se
 
 
 ##Changelog
+
+v0.3.0 - Added bower package functionality
 
 v0.2.0 - Removed css source files and restructured repo for better compatibility with user projects
 
