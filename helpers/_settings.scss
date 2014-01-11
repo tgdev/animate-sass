@@ -1,0 +1,132 @@
+/////////////////////////////////////////////////////////
+// Animation Settings                                  //
+/////////////////////////////////////////////////////////
+
+
+// Base module settings
+$base-duration					: 1s;           // used in 1-base module
+$base-origin 					: top center;
+$base-degrees 					: 30deg;        // used in lightspeed & special modules
+
+$base-timing-function-in		: ease-in;
+$base-timing-function-out		: ease-out;
+$base-timing-function-in-out	: ease-in-out;
+
+$base-distance					: 10px; 		// used in fade, shake and bounce modules
+$base-distance-big				: 1000px;       // used in fadeBig and bounce modules
+
+
+// Rotate module settings
+$rotate-degrees 				: 90deg;
+$rotatedegrees-max 				: 200deg;
+$rotate-origin 					: center center;
+
+// Flipper module settings
+$flipper-perspective			: 400px;
+$flipper-translate 				: 150px;
+$flipper-degrees 				: 10deg;
+$flipper-degrees-max 			: 90deg;
+
+
+// Hinge module settings
+$hinge-origin 					: top left;
+$hinge-degrees-max 				: 80deg;
+$hinge-translate 				: 700px;
+
+
+//==================================================================================================//
+// Module loading                                                                                   //
+//==================================================================================================//
+// To include an animation module in the compiled css file, simply set it's attribute below to true //
+// (all modules set to false will not be included)                                                  //
+// The idea here is to only load the animations you want to use on a per project basis              //
+// This helps keep the compiled css file at its leanest                                             //
+//==================================================================================================//
+// Hugely influenced and inspired by @csswizardry's inuit.css _vars.scss file                       //
+//==================================================================================================//
+
+// Fade Enter
+$use-fadeIn 			:	false;
+$use-fadeInUp 			:	false;
+$use-fadeInUpBig 		:	false;
+$use-fadeInDown 		:	false;
+$use-fadeInDownBig 		:	false;
+$use-fadeInLeft 		:	false;
+$use-fadeInLeftBig 		:	false;
+$use-fadeInRight 		:	false;
+$use-fadeInRightBig 	:	false;
+
+
+// Fade Exit
+$use-fadeOut			:   false;
+$use-fadeOutUp			:	false;
+$use-fadeOutUpBig   	:	false;
+$use-fadeOutDown		:	false;
+$use-fadeOutDownBig 	:	false;
+$use-fadeOutLeft		:	false;
+$use-fadeOutLeftBig 	:	false;
+$use-fadeOutRight		:	false;
+$use-fadeOutRightBig	:	false;
+
+
+// Bounce Enter
+$use-bounceIn			:	false;
+$use-bounceInUp			: 	false;
+$use-bounceInDown 		: 	false;
+$use-bounceInLeft 		: 	false;
+$use-bounceInRight 		: 	false;
+
+
+// Bounce Exit
+$use-bounceOut			:	false;
+$use-bounceOutUp		: 	false;
+$use-bounceOutDown 		: 	false;
+$use-bounceOutLeft 		: 	false;
+$use-bounceOutRight 	: 	false;
+
+
+
+// Rotate Enter
+$use-rotateIn 			:	false;
+$use-rotateInUpLeft 	: 	false;
+$use-rotateInUpRight 	: 	false;
+$use-rotateInDownLeft 	: 	false;
+$use-rotateInDownRight 	: 	false;
+
+
+// Rotate Exit
+$use-rotateOut 			:	false;
+$use-rotateOutUpLeft 	: 	false;
+$use-rotateOutUpRight 	: 	false;
+$use-rotateOutDownLeft 	: 	false;
+$use-rotateOutDownRight : 	false;
+
+
+// Flippers
+$use-flip				:	false;
+$use-flipInX			:	false;
+$use-flipInY			:	false;
+$use-flipOutX			:	false;
+$use-flipOutY			:	false;
+
+
+// Lightspeed
+$use-lightSpeedIn 		:	false;
+$use-lightSpeedOut 		:	false;	
+
+
+// Attention Seekers
+$use-bounce				:	false;
+$use-flash				:	false;
+$use-pulse				:	false;
+$use-wiggle				:	false;
+$use-swing				:	false;
+$use-shake				:	false;
+$use-tada				:	false;
+$use-wobble				:	false;
+
+
+// Special
+$use-hinge				:	false;
+$use-rollIn				: 	false;
+$use-rollOut 			:	false;
