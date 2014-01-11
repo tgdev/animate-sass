@@ -6,7 +6,7 @@
     "_resolution": {
         "type": "version",
         "tag": "v0.3.0",
-        "commit": ""
+        "commit": "88b1aabcdb1d4a8627590a8c555f88d2018262f5"
     },
     "_source": "git://github.com/tgdev/animate-sass.git",
     "_target": "~0.3.0",
