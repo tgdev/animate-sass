@@ -18,7 +18,7 @@ $base-distance-big				: 1000px;       // used in fadeBig and bounce modules
 
 // Rotate module settings
 $rotate-degrees 				: 90deg;
-$rotatedegrees-max 				: 200deg;
+$rotate-degrees-max 			: 200deg;
 $rotate-origin 					: center center;
 
 // Flipper module settings
@@ -46,87 +46,87 @@ $hinge-translate 				: 700px;
 //==================================================================================================//
 
 // Fade Enter
-$use-fadeIn 			:	false;
-$use-fadeInUp 			:	false;
-$use-fadeInUpBig 		:	false;
-$use-fadeInDown 		:	false;
-$use-fadeInDownBig 		:	false;
-$use-fadeInLeft 		:	false;
-$use-fadeInLeftBig 		:	false;
-$use-fadeInRight 		:	false;
-$use-fadeInRightBig 	:	false;
+$use-fadeIn 			:	true;
+$use-fadeInUp 			:	true;
+$use-fadeInUpBig 		:	true;
+$use-fadeInDown 		:	true;
+$use-fadeInDownBig 		:	true;
+$use-fadeInLeft 		:	true;
+$use-fadeInLeftBig 		:	true;
+$use-fadeInRight 		:	true;
+$use-fadeInRightBig 	:	true;
 
 
 // Fade Exit
-$use-fadeOut			:   false;
-$use-fadeOutUp			:	false;
-$use-fadeOutUpBig   	:	false;
-$use-fadeOutDown		:	false;
-$use-fadeOutDownBig 	:	false;
-$use-fadeOutLeft		:	false;
-$use-fadeOutLeftBig 	:	false;
-$use-fadeOutRight		:	false;
-$use-fadeOutRightBig	:	false;
+$use-fadeOut			:   true;
+$use-fadeOutUp			:	true;
+$use-fadeOutUpBig   	:	true;
+$use-fadeOutDown		:	true;
+$use-fadeOutDownBig 	:	true;
+$use-fadeOutLeft		:	true;
+$use-fadeOutLeftBig 	:	true;
+$use-fadeOutRight		:	true;
+$use-fadeOutRightBig	:	true;
 
 
 // Bounce Enter
-$use-bounceIn			:	false;
-$use-bounceInUp			: 	false;
-$use-bounceInDown 		: 	false;
-$use-bounceInLeft 		: 	false;
-$use-bounceInRight 		: 	false;
+$use-bounceIn			:	true;
+$use-bounceInUp			: 	true;
+$use-bounceInDown 		: 	true;
+$use-bounceInLeft 		: 	true;
+$use-bounceInRight 		: 	true;
 
 
 // Bounce Exit
-$use-bounceOut			:	false;
-$use-bounceOutUp		: 	false;
-$use-bounceOutDown 		: 	false;
-$use-bounceOutLeft 		: 	false;
-$use-bounceOutRight 	: 	false;
+$use-bounceOut			:	true;
+$use-bounceOutUp		: 	true;
+$use-bounceOutDown 		: 	true;
+$use-bounceOutLeft 		: 	true;
+$use-bounceOutRight 	: 	true;
 
 
 
 // Rotate Enter
-$use-rotateIn 			:	false;
-$use-rotateInUpLeft 	: 	false;
-$use-rotateInUpRight 	: 	false;
-$use-rotateInDownLeft 	: 	false;
-$use-rotateInDownRight 	: 	false;
+$use-rotateIn 			:	true;
+$use-rotateInUpLeft 	: 	true;
+$use-rotateInUpRight 	: 	true;
+$use-rotateInDownLeft 	: 	true;
+$use-rotateInDownRight 	: 	true;
 
 
 // Rotate Exit
-$use-rotateOut 			:	false;
-$use-rotateOutUpLeft 	: 	false;
-$use-rotateOutUpRight 	: 	false;
-$use-rotateOutDownLeft 	: 	false;
-$use-rotateOutDownRight : 	false;
+$use-rotateOut 			:	true;
+$use-rotateOutUpLeft 	: 	true;
+$use-rotateOutUpRight 	: 	true;
+$use-rotateOutDownLeft 	: 	true;
+$use-rotateOutDownRight : 	true;
 
 
 // Flippers
-$use-flip				:	false;
-$use-flipInX			:	false;
-$use-flipInY			:	false;
-$use-flipOutX			:	false;
-$use-flipOutY			:	false;
+$use-flip				:	true;
+$use-flipInX			:	true;
+$use-flipInY			:	true;
+$use-flipOutX			:	true;
+$use-flipOutY			:	true;
 
 
 // Lightspeed
-$use-lightSpeedIn 		:	false;
-$use-lightSpeedOut 		:	false;	
+$use-lightSpeedIn 		:	true;
+$use-lightSpeedOut 		:	true;	
 
 
 // Attention Seekers
-$use-bounce				:	false;
-$use-flash				:	false;
-$use-pulse				:	false;
-$use-wiggle				:	false;
-$use-swing				:	false;
-$use-shake				:	false;
-$use-tada				:	false;
-$use-wobble				:	false;
+$use-bounce				:	true;
+$use-flash				:	true;
+$use-pulse				:	true;
+$use-wiggle				:	true;
+$use-swing				:	true;
+$use-shake				:	true;
+$use-tada				:	true;
+$use-wobble				:	true;
 
 
 // Special
-$use-hinge				:	false;
-$use-rollIn				: 	false;
-$use-rollOut 			:	false;
+$use-hinge				:	true;
+$use-rollIn				: 	true;
+$use-rollOut 			:	true;

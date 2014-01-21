@@ -6,7 +6,7 @@
 	}
 
 	.flash {
-		@include prefix-animation(flash);
+		@include prefixer(animation-name, flash);
 	}	
 
 }
