@@ -6,11 +6,11 @@
 			-webkit-animation-timing-function: ease-out;
 		}
 		40% {
-			-webkit-transform: perspective($flipper-perspective) translateZ($flipper-transloate) rotateY(170deg);
+			-webkit-transform: perspective($flipper-perspective) translateZ($flipper-translate) rotateY(170deg);
 			-webkit-animation-timing-function: ease-out;
 		}
 		50% {
-			-webkit-transform: perspective($flipper-perspective) translateZ($flipper-transloate) rotateY(190deg) scale(1);
+			-webkit-transform: perspective($flipper-perspective) translateZ($flipper-translate) rotateY(190deg) scale(1);
 			-webkit-animation-timing-function: ease-in;
 		}
 		80% {
@@ -29,11 +29,11 @@
 			-moz-animation-timing-function: ease-out;
 		}
 		40% {
-			-moz-transform: perspective($flipper-perspective) translateZ($flipper-transloate) rotateY(170deg);
+			-moz-transform: perspective($flipper-perspective) translateZ($flipper-translate) rotateY(170deg);
 			-moz-animation-timing-function: ease-out;
 		}
 		50% {
-			-moz-transform: perspective($flipper-perspective) translateZ($flipper-transloate) rotateY(190deg) scale(1);
+			-moz-transform: perspective($flipper-perspective) translateZ($flipper-translate) rotateY(190deg) scale(1);
 			-moz-animation-timing-function: ease-in;
 		}
 		80% {
@@ -52,11 +52,11 @@
 			-o-animation-timing-function: ease-out;
 		}
 		40% {
-			-o-transform: perspective($flipper-perspective) translateZ($flipper-transloate) rotateY(170deg);
+			-o-transform: perspective($flipper-perspective) translateZ($flipper-translate) rotateY(170deg);
 			-o-animation-timing-function: ease-out;
 		}
 		50% {
-			-o-transform: perspective($flipper-perspective) translateZ($flipper-transloate) rotateY(190deg) scale(1);
+			-o-transform: perspective($flipper-perspective) translateZ($flipper-translate) rotateY(190deg) scale(1);
 			-o-animation-timing-function: ease-in;
 		}
 		80% {
@@ -75,11 +75,11 @@
 			animation-timing-function: ease-out;
 		}
 		40% {
-			transform: perspective($flipper-perspective) translateZ($flipper-transloate) rotateY(170deg);
+			transform: perspective($flipper-perspective) translateZ($flipper-translate) rotateY(170deg);
 			animation-timing-function: ease-out;
 		}
 		50% {
-			transform: perspective($flipper-perspective) translateZ($flipper-transloate) rotateY(190deg) scale(1);
+			transform: perspective($flipper-perspective) translateZ($flipper-translate) rotateY(190deg) scale(1);
 			animation-timing-function: ease-in;
 		}
 		80% {
