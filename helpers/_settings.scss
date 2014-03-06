@@ -44,89 +44,90 @@ $hinge-translate 				: 700px;
 //==================================================================================================//
 // Hugely influenced and inspired by @csswizardry's inuit.css _vars.scss file                       //
 //==================================================================================================//
+$use-animation : true !default;
 
 // Fade Enter
-$use-fadeIn 			:	true;
-$use-fadeInUp 			:	true;
-$use-fadeInUpBig 		:	true;
-$use-fadeInDown 		:	true;
-$use-fadeInDownBig 		:	true;
-$use-fadeInLeft 		:	true;
-$use-fadeInLeftBig 		:	true;
-$use-fadeInRight 		:	true;
-$use-fadeInRightBig 	:	true;
+$use-fadeIn 			:	$use-animation !default;
+$use-fadeInUp 			:	$use-animation !default;
+$use-fadeInUpBig 		:	$use-animation !default;
+$use-fadeInDown 		:	$use-animation !default;
+$use-fadeInDownBig 		:	$use-animation !default;
+$use-fadeInLeft 		:	$use-animation !default;
+$use-fadeInLeftBig 		:	$use-animation !default;
+$use-fadeInRight 		:	$use-animation !default;
+$use-fadeInRightBig 	:	$use-animation !default;
 
 
 // Fade Exit
-$use-fadeOut			:   true;
-$use-fadeOutUp			:	true;
-$use-fadeOutUpBig   	:	true;
-$use-fadeOutDown		:	true;
-$use-fadeOutDownBig 	:	true;
-$use-fadeOutLeft		:	true;
-$use-fadeOutLeftBig 	:	true;
-$use-fadeOutRight		:	true;
-$use-fadeOutRightBig	:	true;
+$use-fadeOut			:   $use-animation !default;
+$use-fadeOutUp			:	$use-animation !default;
+$use-fadeOutUpBig   	:	$use-animation !default;
+$use-fadeOutDown		:	$use-animation !default;
+$use-fadeOutDownBig 	:	$use-animation !default;
+$use-fadeOutLeft		:	$use-animation !default;
+$use-fadeOutLeftBig 	:	$use-animation !default;
+$use-fadeOutRight		:	$use-animation !default;
+$use-fadeOutRightBig	:	$use-animation !default;
 
 
 // Bounce Enter
-$use-bounceIn			:	true;
-$use-bounceInUp			: 	true;
-$use-bounceInDown 		: 	true;
-$use-bounceInLeft 		: 	true;
-$use-bounceInRight 		: 	true;
+$use-bounceIn			:	$use-animation !default;
+$use-bounceInUp			: 	$use-animation !default;
+$use-bounceInDown 		: 	$use-animation !default;
+$use-bounceInLeft 		: 	$use-animation !default;
+$use-bounceInRight 		: 	$use-animation !default;
 
 
 // Bounce Exit
-$use-bounceOut			:	true;
-$use-bounceOutUp		: 	true;
-$use-bounceOutDown 		: 	true;
-$use-bounceOutLeft 		: 	true;
-$use-bounceOutRight 	: 	true;
+$use-bounceOut			:	$use-animation !default;
+$use-bounceOutUp		: 	$use-animation !default;
+$use-bounceOutDown 		: 	$use-animation !default;
+$use-bounceOutLeft 		: 	$use-animation !default;
+$use-bounceOutRight 	: 	$use-animation !default;
 
 
 
 // Rotate Enter
-$use-rotateIn 			:	true;
-$use-rotateInUpLeft 	: 	true;
-$use-rotateInUpRight 	: 	true;
-$use-rotateInDownLeft 	: 	true;
-$use-rotateInDownRight 	: 	true;
+$use-rotateIn 			:	$use-animation !default;
+$use-rotateInUpLeft 	: 	$use-animation !default;
+$use-rotateInUpRight 	: 	$use-animation !default;
+$use-rotateInDownLeft 	: 	$use-animation !default;
+$use-rotateInDownRight 	: 	$use-animation !default;
 
 
 // Rotate Exit
-$use-rotateOut 			:	true;
-$use-rotateOutUpLeft 	: 	true;
-$use-rotateOutUpRight 	: 	true;
-$use-rotateOutDownLeft 	: 	true;
-$use-rotateOutDownRight : 	true;
+$use-rotateOut 			:	$use-animation !default;
+$use-rotateOutUpLeft 	: 	$use-animation !default;
+$use-rotateOutUpRight 	: 	$use-animation !default;
+$use-rotateOutDownLeft 	: 	$use-animation !default;
+$use-rotateOutDownRight : 	$use-animation !default;
 
 
 // Flippers
-$use-flip				:	true;
-$use-flipInX			:	true;
-$use-flipInY			:	true;
-$use-flipOutX			:	true;
-$use-flipOutY			:	true;
+$use-flip				:	$use-animation !default;
+$use-flipInX			:	$use-animation !default;
+$use-flipInY			:	$use-animation !default;
+$use-flipOutX			:	$use-animation !default;
+$use-flipOutY			:	$use-animation !default;
 
 
 // Lightspeed
-$use-lightSpeedIn 		:	true;
-$use-lightSpeedOut 		:	true;	
+$use-lightSpeedIn 		:	$use-animation !default;
+$use-lightSpeedOut 		:	$use-animation !default;	
 
 
 // Attention Seekers
-$use-bounce				:	true;
-$use-flash				:	true;
-$use-pulse				:	true;
-$use-wiggle				:	true;
-$use-swing				:	true;
-$use-shake				:	true;
-$use-tada				:	true;
-$use-wobble				:	true;
+$use-bounce				:	$use-animation !default;
+$use-flash				:	$use-animation !default;
+$use-pulse				:	$use-animation !default;
+$use-wiggle				:	$use-animation !default;
+$use-swing				:	$use-animation !default;
+$use-shake				:	$use-animation !default;
+$use-tada				:	$use-animation !default;
+$use-wobble				:	$use-animation !default;
 
 
 // Special
-$use-hinge				:	true;
-$use-rollIn				: 	true;
-$use-rollOut 			:	true;
+$use-hinge				:	$use-animation !default;
+$use-rollIn				: 	$use-animation !default;
+$use-rollOut 			:	$use-animation !default;
