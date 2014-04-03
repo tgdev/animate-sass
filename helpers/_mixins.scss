@@ -32,19 +32,19 @@
 // Courtesy of @integralist: (twitter.com)                       //
 //===============================================================//
 @mixin keyframe ($animation-name) {
-    @-webkit-keyframes $animation-name{
+    @-webkit-keyframes #{$animation-name}{
         @content;
     }
 
-    @-moz-keyframes $animation-name{
+    @-moz-keyframes #{$animation-name}{
         @content;
     }
 
-    @-o-keyframes $animation-name{
+    @-o-keyframes #{$animation-name}{
         @content;
     }
 
-    @keyframes $animation-name{
+    @keyframes #{$animation-name}{
         @content;
     }
 }
