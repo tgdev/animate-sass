@@ -1,6 +1,6 @@
 @if $use-fadeOut == true {
 
-	@include keyframe(fadeOut) {
+	@include animate-keyframe(fadeOut) {
 		0% {opacity: 1;}
 		100% {opacity: 0;}
 	}

@@ -24,14 +24,14 @@
 //      .fadeIn {                                                //
 //          @include animate-prefixer(animation, fadeIn);        //
 //      }                                                        //
-//      @include keyframe(fadeIn){                               //
+//      @include animate-keyframe(fadeIn) {                      //
 //          0% {opacity: 0;}                                     //
 //          100% {opacity: 1;}                                   //
 //      }                                                        //
 //===============================================================//
 // Courtesy of @integralist: (twitter.com)                       //
 //===============================================================//
-@mixin keyframe ($animation-name) {
+@mixin animate-keyframe($animation-name) {
     @-webkit-keyframes $animation-name{
         @content;
     }
