@@ -1,5 +1,5 @@
 @if $use-rotateIn == true {
-	
+
 	@-webkit-keyframes rotateIn {
 		0% {
 			-webkit-transform-origin: $rotate-origin;
@@ -54,7 +54,7 @@
 	}
 
 	.rotateIn {
-		@include prefixer(animation-name, rotateIn);
+		@include animate-prefixer(animation-name, rotateIn);
 	}
 
 }

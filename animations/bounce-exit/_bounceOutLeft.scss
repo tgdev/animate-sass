@@ -4,12 +4,12 @@
 		0% {
 			-webkit-transform: translateX(0);
 		}
-		
+
 		20% {
 			opacity: 1;
 			-webkit-transform: translateX($base-distance * 2);
 		}
-		
+
 		100% {
 			opacity: 0;
 			-webkit-transform: translateX(-$base-distance-big * 2);
@@ -20,12 +20,12 @@
 		0% {
 			-moz-transform: translateX(0);
 		}
-		
+
 		20% {
 			opacity: 1;
 			-moz-transform: translateX($base-distance * 2);
 		}
-		
+
 		100% {
 			opacity: 0;
 			-moz-transform: translateX(-$base-distance-big * 2);
@@ -36,12 +36,12 @@
 		0% {
 			-o-transform: translateX(0);
 		}
-		
+
 		20% {
 			opacity: 1;
 			-o-transform: translateX($base-distance * 2);
 		}
-		
+
 		100% {
 			opacity: 0;
 			-o-transform: translateX(-$base-distance-big * 2);
@@ -52,12 +52,12 @@
 		0% {
 			transform: translateX(0);
 		}
-		
+
 		20% {
 			opacity: 1;
 			transform: translateX($base-distance * 2);
 		}
-		
+
 		100% {
 			opacity: 0;
 			transform: translateX(-$base-distance-big * 2);
@@ -65,7 +65,7 @@
 	}
 
 	.bounceOutLeft {
-		@include prefixer(animation-name, bounceOutLeft);
+		@include animate-prefixer(animation-name, bounceOutLeft);
 	}
 
 }

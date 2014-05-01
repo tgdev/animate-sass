@@ -1,17 +1,17 @@
 ///////////////////////////////////////////////////////////////////
 // Sass Mixins which will be used by the modules                 //
 ///////////////////////////////////////////////////////////////////
- 
+
 //===============================================================//
 //          Automatically add vendor prefixes in one hit         //
 //===============================================================//
 //      .fadeIn {                                                //
-//          @include prefixer(animation, fadeIn);                  //
+//          @include animate-prefixer(animation, fadeIn);        //
 //      }                                                        //
 //===============================================================//
 //                                                               //
 //===============================================================//
-@mixin prefixer($property, $value...) {
+@mixin animate-prefixer($property, $value...) {
     -webkit-#{$property}:$value;
        -moz-#{$property}:$value;
          -o-#{$property}:$value;
@@ -22,7 +22,7 @@
 // Generate keyframes animations with vendor prefixes in one hit //
 //===============================================================//
 //      .fadeIn {                                                //
-//          @include prefixer(animation, fadeIn);                  //
+//          @include animate-prefixer(animation, fadeIn);        //
 //      }                                                        //
 //      @include keyframe(fadeIn){                               //
 //          0% {opacity: 0;}                                     //

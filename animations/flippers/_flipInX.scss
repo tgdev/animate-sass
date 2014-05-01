@@ -1,19 +1,19 @@
 @if $use-flipInX == true {
-	
+
 	@-webkit-keyframes flipInX {
     0% {
         -webkit-transform: perspective($flipper-perspective) rotateX($flipper-degrees-max);
         opacity: 0;
     }
-    
+
     40% {
         -webkit-transform: perspective($flipper-perspective) rotateX(-$flipper-degrees);
     }
-    
+
     70% {
         -webkit-transform: perspective($flipper-perspective) rotateX($flipper-degrees);
     }
-    
+
     100% {
         -webkit-transform: perspective($flipper-perspective) rotateX(0deg);
         opacity: 1;
@@ -24,15 +24,15 @@
         -moz-transform: perspective($flipper-perspective) rotateX($flipper-degrees-max);
         opacity: 0;
     }
-    
+
     40% {
         -moz-transform: perspective($flipper-perspective) rotateX(-$flipper-degrees);
     }
-    
+
     70% {
         -moz-transform: perspective($flipper-perspective) rotateX($flipper-degrees);
     }
-    
+
     100% {
         -moz-transform: perspective($flipper-perspective) rotateX(0deg);
         opacity: 1;
@@ -43,15 +43,15 @@
         -o-transform: perspective($flipper-perspective) rotateX($flipper-degrees-max);
         opacity: 0;
     }
-    
+
     40% {
         -o-transform: perspective($flipper-perspective) rotateX(-$flipper-degrees);
     }
-    
+
     70% {
         -o-transform: perspective($flipper-perspective) rotateX($flipper-degrees);
     }
-    
+
     100% {
         -o-transform: perspective($flipper-perspective) rotateX(0deg);
         opacity: 1;
@@ -62,15 +62,15 @@
         transform: perspective($flipper-perspective) rotateX($flipper-degrees-max);
         opacity: 0;
     }
-    
+
     40% {
         transform: perspective($flipper-perspective) rotateX(-$flipper-degrees);
     }
-    
+
     70% {
         transform: perspective($flipper-perspective) rotateX($flipper-degrees);
     }
-    
+
     100% {
         transform: perspective($flipper-perspective) rotateX(0deg);
         opacity: 1;
@@ -78,7 +78,7 @@
 }
 
 .flipInX {
-	@include prefixer(backface-visibility, visible !important);
-	@include prefixer(animation-name, flipInX);
+	@include animate-prefixer(backface-visibility, visible !important);
+	@include animate-prefixer(animation-name, flipInX);
 }
 }

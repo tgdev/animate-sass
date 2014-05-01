@@ -4,16 +4,16 @@
 			opacity: 0;
 			-webkit-transform: translateY(-$base-distance-big * 2);
 		}
-		
+
 		60% {
 			opacity: 1;
 			-webkit-transform: translateY($base-distance * 3);
 		}
-		
+
 		80% {
 			-webkit-transform: translateY(-$base-distance);
 		}
-		
+
 		100% {
 			-webkit-transform: translateY(0);
 		}
@@ -24,16 +24,16 @@
 			opacity: 0;
 			-moz-transform: translateY(-$base-distance-big * 2);
 		}
-		
+
 		60% {
 			opacity: 1;
 			-moz-transform: translateY($base-distance * 3);
 		}
-		
+
 		80% {
 			-moz-transform: translateY(-$base-distance);
 		}
-		
+
 		100% {
 			-moz-transform: translateY(0);
 		}
@@ -44,16 +44,16 @@
 			opacity: 0;
 			-o-transform: translateY(-$base-distance-big * 2);
 		}
-		
+
 		60% {
 			opacity: 1;
 			-o-transform: translateY($base-distance * 3);
 		}
-		
+
 		80% {
 			-o-transform: translateY(-$base-distance);
 		}
-		
+
 		100% {
 			-o-transform: translateY(0);
 		}
@@ -64,22 +64,22 @@
 			opacity: 0;
 			transform: translateY(-$base-distance-big * 2);
 		}
-		
+
 		60% {
 			opacity: 1;
 			transform: translateY($base-distance * 3);
 		}
-		
+
 		80% {
 			transform: translateY(-$base-distance);
 		}
-		
+
 		100% {
 			transform: translateY(0);
 		}
 	}
 
 	.bounceInDown {
-		@include prefixer(animation-name, bounceInDown);
+		@include animate-prefixer(animation-name, bounceInDown);
 	}
 }

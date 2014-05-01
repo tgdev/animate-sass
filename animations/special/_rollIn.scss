@@ -1,5 +1,5 @@
 @if $use-rollIn == true {
-	
+
 	// originally authored by Nick Pettit - https://github.com/nickpettit/glide
 
 	@-webkit-keyframes rollIn {
@@ -23,7 +23,7 @@
 	}
 
 	.rollIn {
-		@include prefixer(animation-name, rollIn);
+		@include animate-prefixer(animation-name, rollIn);
 	}
 
 }

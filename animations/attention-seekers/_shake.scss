@@ -1,5 +1,5 @@
 @if $use-shake == true {
-	
+
 	@-webkit-keyframes shake {
 		0%, 100% {-webkit-transform: translateX(0);}
 		10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-$base-distance);}
@@ -25,6 +25,6 @@
 	}
 
 	.shake {
-		@include prefixer(animation-name, shake);
+		@include animate-prefixer(animation-name, shake);
 	}
 }

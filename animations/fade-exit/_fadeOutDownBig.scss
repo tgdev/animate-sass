@@ -1,5 +1,5 @@
 @if $use-fadeOutDownBig == true {
-	
+
 	@-webkit-keyframes fadeOutDownBig {
 		0% {
 			opacity: 1;
@@ -49,6 +49,6 @@
 	}
 
 	.fadeOutDownBig {
-		@include prefixer(animation-name, fadeOutDownBig);
-	}	
+		@include animate-prefixer(animation-name, fadeOutDownBig);
+	}
 }

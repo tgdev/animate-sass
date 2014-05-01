@@ -1,5 +1,5 @@
 @if $use-fadeInUpBig == true {
-	
+
 	@-webkit-keyframes fadeInUpBig {
 		0% {
 			opacity: 0;
@@ -49,7 +49,7 @@
 	}
 
 	.fadeInUpBig {
-		@include prefixer(animation-name, fadeInUpBig);
-	}	
+		@include animate-prefixer(animation-name, fadeInUpBig);
+	}
 
 }
