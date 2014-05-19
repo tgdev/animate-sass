@@ -81,6 +81,6 @@
 	}
 
 	.bounceInLeft {
-		@include prefixer(animation-name, bounceInLeft);
+		@include animate-prefixer(animation-name, bounceInLeft);
 	}
 }

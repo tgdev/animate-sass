@@ -1,5 +1,5 @@
 @if $use-flip == true {
-	
+
 	@-webkit-keyframes flip {
 		0% {
 			-webkit-transform: perspective($flipper-perspective) rotateY(0);
@@ -22,7 +22,7 @@
 			-webkit-animation-timing-function: ease-in;
 		}
 	}
-	
+
 	@-moz-keyframes flip {
 		0% {
 			-moz-transform: perspective($flipper-perspective) rotateY(0);
@@ -45,7 +45,7 @@
 			-moz-animation-timing-function: ease-in;
 		}
 	}
-	
+
 	@-o-keyframes flip {
 		0% {
 			-o-transform: perspective($flipper-perspective) rotateY(0);
@@ -68,7 +68,7 @@
 			-o-animation-timing-function: ease-in;
 		}
 	}
-	
+
 	@keyframes flip {
 		0% {
 			transform: perspective($flipper-perspective) rotateY(0);
@@ -93,9 +93,9 @@
 	}
 
 	.flip {
-		@include prefixer(transform-style, preserve-3d);
-		@include prefixer(backface-visibility, visible !important);
-		@include prefixer(animation-name, flip)
-	}	
+		@include animate-prefixer(transform-style, preserve-3d);
+		@include animate-prefixer(backface-visibility, visible !important);
+		@include animate-prefixer(animation-name, flip)
+	}
 
 }

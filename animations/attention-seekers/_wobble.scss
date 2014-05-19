@@ -1,5 +1,5 @@
 @if $use-wobble == true {
-	
+
 	// originally authored by Nick Pettit - https://github.com/nickpettit/glide
 
 	@-webkit-keyframes wobble {
@@ -43,7 +43,7 @@
 	}
 
 	.wobble {
-		@include prefixer(animation-name, wobble);
+		@include animate-prefixer(animation-name, wobble);
 	}
-	
+
 }

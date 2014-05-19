@@ -1,5 +1,5 @@
 @if $use-rollOut == true {
-	
+
 	// originally authored by Nick Pettit - https://github.com/nickpettit/glide
 
 	@-webkit-keyframes rollOut {
@@ -51,7 +51,7 @@
 	}
 
 	.rollOut {
-		@include prefixer(animation-name, rollOut);
+		@include animate-prefixer(animation-name, rollOut);
 	}
 
 }

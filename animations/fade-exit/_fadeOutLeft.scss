@@ -49,7 +49,7 @@
 	}
 
 	.fadeOutLeft {
-		@include prefixer(animation-name, fadeOutLeft);
-	}	
+		@include animate-prefixer(animation-name, fadeOutLeft);
+	}
 
 }

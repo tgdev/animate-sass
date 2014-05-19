@@ -1,5 +1,5 @@
 @if $use-fadeInRight == true {
-	
+
 	@-webkit-keyframes fadeInRight {
 		0% {
 			opacity: 0;
@@ -49,6 +49,6 @@
 	}
 
 	.fadeInRight {
-		@include prefixer(animation-name, fadeInRight);
-	}	
+		@include animate-prefixer(animation-name, fadeInRight);
+	}
 }

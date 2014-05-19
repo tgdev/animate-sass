@@ -1,5 +1,5 @@
 @if $use-lightSpeedOut == true {
-	
+
 	@-webkit-keyframes lightSpeedOut {
 		0% { -webkit-transform: translateX(0%) skewX(0deg); opacity: 1; }
 		100% { -webkit-transform: translateX(100%) skewX(-$base-degrees); opacity: 0; }
@@ -21,7 +21,7 @@
 	}
 
 	.lightSpeedOut {
-		@include prefixer(animation-name, lightSpeedOut);
-		@include prefixer(animation-timing-function, $base-timing-function-in);
+		@include animate-prefixer(animation-name, lightSpeedOut);
+		@include animate-prefixer(animation-timing-function, $base-timing-function-in);
 	}
 }

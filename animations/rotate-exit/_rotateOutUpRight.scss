@@ -5,7 +5,7 @@
 		-webkit-transform: rotate(0);
 		opacity: 1;
 	}
-	
+
 	100% {
 		-webkit-transform-origin: right bottom;
 		-webkit-transform: rotate($rotate-degrees);
@@ -19,7 +19,7 @@
 		-moz-transform: rotate(0);
 		opacity: 1;
 	}
-	
+
 	100% {
 		-moz-transform-origin: right bottom;
 		-moz-transform: rotate($rotate-degrees);
@@ -33,7 +33,7 @@
 		-o-transform: rotate(0);
 		opacity: 1;
 	}
-	
+
 	100% {
 		-o-transform-origin: right bottom;
 		-o-transform: rotate($rotate-degrees);
@@ -47,7 +47,7 @@
 		transform: rotate(0);
 		opacity: 1;
 	}
-	
+
 	100% {
 		transform-origin: right bottom;
 		transform: rotate($rotate-degrees);
@@ -56,6 +56,6 @@
 }
 
 .rotateOutUpRight {
-	@include prefixer(animation-name, rotateOutUpRight);
+	@include animate-prefixer(animation-name, rotateOutUpRight);
 }
 }

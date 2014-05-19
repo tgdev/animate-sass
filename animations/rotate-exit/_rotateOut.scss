@@ -1,5 +1,5 @@
 @if $use-rotateOut == true {
-	
+
 	@-webkit-keyframes rotateOut {
 		0% {
 			-webkit-transform-origin: $rotate-origin;
@@ -57,7 +57,7 @@
 	}
 
 	.rotateOut {
-		@include prefixer(animation-name, rotateOut);
+		@include animate-prefixer(animation-name, rotateOut);
 	}
 
 }

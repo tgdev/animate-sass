@@ -1,5 +1,5 @@
 @if $use-flipOutX == true {
-	
+
 	@-webkit-keyframes flipOutX {
         0% {
             -webkit-transform: perspective($flipper-perspective) rotateX(0deg);
@@ -45,8 +45,8 @@
     }
 
     .flipOutX {
-    	@include prefixer(animation-name, flipOutX);
-    	@include prefixer(backface-visibility, visible !important);
+    	@include animate-prefixer(animation-name, flipOutX);
+    	@include animate-prefixer(backface-visibility, visible !important);
     }
-    
+
 }

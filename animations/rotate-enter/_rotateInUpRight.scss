@@ -57,7 +57,7 @@
 	}
 
 	.rotateInUpRight {
-		@include prefixer(animation-name, rotateInUpRight);
+		@include animate-prefixer(animation-name, rotateInUpRight);
 	}
 
 }

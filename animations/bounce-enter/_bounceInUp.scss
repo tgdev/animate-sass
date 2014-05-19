@@ -80,7 +80,7 @@
 	}
 
 	.bounceInUp {
-		@include prefixer(animation-name, bounceInUp);
+		@include animate-prefixer(animation-name, bounceInUp);
 	}
 
 }
