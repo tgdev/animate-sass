@@ -125,6 +125,8 @@ You can [check out the original animate.css here](http://daneden.me/animate). Se
 
 ##Changelog
 
+v0.5.0 - Merged various pull requests to fix issues with 3rd party frameworks Bourbon and Libsass.
+
 v0.4.0 - Added override option of all variables. Made sass file a partial to be imported into projects stylesheet without generating a standalone css file. Removed base helper partial in favour of copying the css into projects sass stylesheet.
 
 v0.3.0 - Added bower package functionality
