@@ -1,0 +1,57 @@
+@if $use-zoomIn == true {
+
+	$animate-name: 'zoomIn';
+
+	$scale: scale3d(.3, .3, .3);
+	$opacity-start: 0;
+	$opacity-end: 1;
+
+	@-webkit-keyframes #{$animate-name} {
+		0% {
+			opacity: $opacity-start;
+			-webkit-transform: #{$scale};
+		}
+
+		50% {
+			opacity: $opacity-end;
+		}
+	}
+
+	@-moz-keyframes #{$animate-name} {
+		0% {
+			opacity: $opacity-start;
+			-moz-transform: #{$scale};
+		}
+
+		50% {
+			opacity: $opacity-end;
+		}
+	}
+
+	@-o-keyframes #{$animate-name} {
+		0% {
+			opacity: $opacity-start;
+			-o-transform: #{$scale};
+		}
+
+		50% {
+			opacity: $opacity-end;
+		}
+	}
+
+	@keyframes #{$animate-name} {
+		0% {
+			opacity: $opacity-start;
+			transform: #{$scale};
+		}
+
+		50% {
+			opacity: $opacity-end;
+		}
+	}
+
+	.#{$animate-name} {
+		@include animate-prefixer(animation-name, $animate-name);
+	}
+
+}

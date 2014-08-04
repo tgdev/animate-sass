@@ -74,6 +74,18 @@
 		"animations/special/rollIn",
 		"animations/special/rollOut";
 
+// ZOOM
+@import "animations/zoom-enter/zoomIn",
+		"animations/zoom-enter/zoomInDown",
+		"animations/zoom-enter/zoomInLeft",
+		"animations/zoom-enter/zoomInRight",
+		"animations/zoom-enter/zoomInUp",
+		"animations/zoom-exit/zoomOut",
+		"animations/zoom-exit/zoomOutDown",
+		"animations/zoom-exit/zoomOutLeft",
+		"animations/zoom-exit/zoomOutRight",
+		"animations/zoom-exit/zoomOutUp";
+
 /////////////////////////////////////////////////////////
 // Copy the css rules  below into your own sass file   //
 /////////////////////////////////////////////////////////

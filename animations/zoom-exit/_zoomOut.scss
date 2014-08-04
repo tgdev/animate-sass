@@ -1,0 +1,74 @@
+@if $use-zoomOut == true {
+
+	$animate-name: 'zoomOut';
+
+	$scale: scale3d(.3, .3, .3);
+	$opacity-start: 1;
+	$opacity-middle: 0;
+	$opacity-end: 0;
+
+	@-webkit-keyframes #{$animate-name} {
+		0% {
+			opacity: $opacity-start;
+		}
+
+		50% {
+			opacity: #{$opacity-middle};
+			-webkit-transform: #{$scale};
+		}
+
+		100% {
+			opacity: $opacity-end;
+		}
+	}
+
+	@-moz-keyframes #{$animate-name} {
+		0% {
+			opacity: $opacity-start;
+		}
+
+		50% {
+			opacity: #{$opacity-middle};
+			-moz-transform: #{$scale};
+		}
+
+		100% {
+			opacity: $opacity-end;
+		}
+	}
+
+	@-o-keyframes #{$animate-name} {
+		0% {
+			opacity: $opacity-start;
+		}
+
+		50% {
+			opacity: #{$opacity-middle};
+			-o-transform: #{$scale};
+		}
+
+		100% {
+			opacity: $opacity-end;
+		}
+	}
+
+	@keyframes #{$animate-name} {
+		0% {
+			opacity: $opacity-start;
+		}
+
+		50% {
+			opacity: #{$opacity-middle};
+			transform: #{$scale};
+		}
+
+		100% {
+			opacity: $opacity-end;
+		}
+	}
+
+	.#{$animate-name} {
+		@include animate-prefixer(animation-name, $animate-name);
+	}
+
+}
