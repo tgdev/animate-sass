@@ -112,7 +112,7 @@ $use-flipOutY			:	false !default;
 
 // Lightspeed
 $use-lightSpeedIn 		:	false !default;
-$use-lightSpeedOut 		:	false !default;	
+$use-lightSpeedOut 		:	false !default;
 
 
 // Attention Seekers
@@ -130,3 +130,19 @@ $use-wobble				:	false !default;
 $use-hinge				:	false !default;
 $use-rollIn				: 	false !default;
 $use-rollOut 			:	false !default;
+
+
+// Zoom In
+$use-zoomIn 			:	false !default;
+$use-zoomInDown 		:	false !default;
+$use-zoomInLeft 		:	false !default;
+$use-zoomInRight 		:	false !default;
+$use-zoomInUp 			:	false !default;
+
+
+// Zoom Out
+$use-zoomOut			:	false !default;
+$use-zoomOutDown		:	false !default;
+$use-zoomOutLeft		:	false !default;
+$use-zoomOutRight		:	false !default;
+$use-zoomOutUp			:	false !default;
