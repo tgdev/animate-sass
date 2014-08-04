@@ -1,70 +1,36 @@
-@if $use-zoomOut == true {
+$animate-name: 'zoomOutDown';
 
-	$animate-name: 'zoomOut';
+@mixin zoomOutDown($prefix: '') {
+	0% {
+		opacity: 1;
+	}
 
-	$scale: scale3d(.3, .3, .3);
-	$opacity-start: 1;
-	$opacity-middle: 0;
-	$opacity-end: 0;
+	50% {
+		opacity: 0;
+		#{$prefix}transform: scale3d(.3, .3, .3);
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@if $use-zoomOutDown == true {
 
 	@-webkit-keyframes #{$animate-name} {
-		0% {
-			opacity: $opacity-start;
-		}
-
-		50% {
-			opacity: #{$opacity-middle};
-			-webkit-transform: #{$scale};
-		}
-
-		100% {
-			opacity: $opacity-end;
-		}
+		@include zoomOutDown('-webkit-');
 	}
 
 	@-moz-keyframes #{$animate-name} {
-		0% {
-			opacity: $opacity-start;
-		}
-
-		50% {
-			opacity: #{$opacity-middle};
-			-moz-transform: #{$scale};
-		}
-
-		100% {
-			opacity: $opacity-end;
-		}
+		@include zoomOutDown('-moz-');
 	}
 
 	@-o-keyframes #{$animate-name} {
-		0% {
-			opacity: $opacity-start;
-		}
-
-		50% {
-			opacity: #{$opacity-middle};
-			-o-transform: #{$scale};
-		}
-
-		100% {
-			opacity: $opacity-end;
-		}
+		@include zoomOutDown('-o-');
 	}
 
 	@keyframes #{$animate-name} {
-		0% {
-			opacity: $opacity-start;
-		}
-
-		50% {
-			opacity: #{$opacity-middle};
-			transform: #{$scale};
-		}
-
-		100% {
-			opacity: $opacity-end;
-		}
+		@include zoomOutDown();
 	}
 
 	.#{$animate-name} {

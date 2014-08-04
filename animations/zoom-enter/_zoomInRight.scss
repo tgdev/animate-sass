@@ -1,71 +1,35 @@
+$animate-name: 'zoomInRight';
+
+@mixin zoomInRight($prefix: '') {
+	0% {
+		opacity: 0;
+		#{$prefix}transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+		#{$prefix}animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+	}
+
+	60% {
+		opacity: 1;
+		#{$prefix}transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+		#{$prefix}animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+	}
+}
+
 @if $use-zoomInRight == true {
 
-	$animate-name: 'zoomInRight';
-
-	$opacity-start: 0;
-	$scale-start: scale3d(.1, .1, .1);
-	$translate-start: translate3d(1000px, 0, 0);
-	$timing-start: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-
-	$opacity-end: 1;
-	$scale-end: scale3d(.475, .475, .475);
-	$translate-end: translate3d(-10px, 0, 0);
-	$timing-end: cubic-bezier(0.175, 0.885, 0.320, 1);
-
 	@-webkit-keyframes #{$animate-name} {
-		0% {
-			opacity: $opacity-start;
-			-webkit-transform: #{$scale-start} #{$translate-start};
-			-webkit-animation-timing-function: #{$timing-start};
-		}
-
-		60% {
-			opacity: $opacity-end;
-			-webkit-transform: #{$scale-end} #{$translate-end};
-			-webkit-animation-timing-function: #{$timing-end};
-		}
+		@include zoomInRight('-webkit-');
 	}
 
 	@-moz-keyframes #{$animate-name} {
-		0% {
-			opacity: $opacity-start;
-			-moz-transform: #{$scale-start} #{$translate-start};
-			-moz-animation-timing-function: #{$timing-start};
-		}
-
-		60% {
-			opacity: $opacity-end;
-			-moz-transform: #{$scale-end} #{$translate-end};
-			-moz-animation-timing-function: #{$timing-end};
-		}
+		@include zoomInRight('-moz-');
 	}
 
 	@-o-keyframes #{$animate-name} {
-		0% {
-			opacity: $opacity-start;
-			-o-transform: #{$scale-start} #{$translate-start};
-			-o-animation-timing-function: #{$timing-start};
-		}
-
-		60% {
-			opacity: $opacity-end;
-			-o-transform: #{$scale-end} #{$translate-end};
-			-o-animation-timing-function: #{$timing-end};
-		}
+		@include zoomInRight('-o-');
 	}
 
 	@keyframes #{$animate-name} {
-		0% {
-			opacity: $opacity-start;
-			transform: #{$scale-start} #{$translate-start};
-			animation-timing-function: #{$timing-start};
-		}
-
-		60% {
-			opacity: $opacity-end;
-			transform: #{$scale-end} #{$translate-end};
-			animation-timing-function: #{$timing-end};
-		}
+		@include zoomInRight();
 	}
 
 	.#{$animate-name} {

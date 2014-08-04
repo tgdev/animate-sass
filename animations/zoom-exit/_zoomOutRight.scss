@@ -1,66 +1,34 @@
+$animate-name: 'zoomOutRight';
+
+@mixin zoomOutRight($prefix: '') {
+	40% {
+		opacity: 1;
+		#{$prefix}transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
+	}
+
+	100% {
+		opacity: 0;
+		#{$prefix}transform: scale3d(.1) translate3d(2000px, 0, 0);
+		#{$prefix}transform-origin: right center;
+	}
+}
+
 @if $use-zoomOutRight == true {
 
-	$animate-name: 'zoomOutRight';
-
-	$opacity-start: 1;
-	$scale-start: scale3d(.475, .475, .475);
-	$translate-start: translate3d(-42px, 0, 0);
-
-	$opacity-end: 0;
-	$scale-end: scale3d(.1);
-	$translate-end: translate3d(2000px, 0, 0);
-	$origin-end: right center;
-
 	@-webkit-keyframes #{$animate-name} {
-		40% {
-			opacity: $opacity-start;
-			-webkit-transform: #{$scale-start} #{$translate-start};
-		}
-
-		100% {
-			opacity: $opacity-end;
-			-webkit-transform: #{$scale-end} #{$translate-end};
-			-webkit-transform-origin: #{$origin-end};
-		}
+		@include zoomOutRight('-webkit-');
 	}
 
 	@-moz-keyframes #{$animate-name} {
-		40% {
-			opacity: $opacity-start;
-			-moz-transform: #{$scale-start} #{$translate-start};
-		}
-
-		100% {
-			opacity: $opacity-end;
-			-moz-transform: #{$scale-end} #{$translate-end};
-			-moz-transform-origin: #{$origin-end};
-		}
+		@include zoomOutRight('-moz-');
 	}
 
 	@-o-keyframes #{$animate-name} {
-		40% {
-			opacity: $opacity-start;
-			-o-transform: #{$scale-start} #{$translate-start};
-		}
-
-		100% {
-			opacity: $opacity-end;
-			-o-transform: #{$scale-end} #{$translate-end};
-			-o-transform-origin: #{$origin-end};
-		}
+		@include zoomOutRight('-o-');
 	}
 
 	@keyframes #{$animate-name} {
-		40% {
-			opacity: $opacity-start;
-			transform: #{$scale-start} #{$translate-start};
-		}
-
-		100% {
-			opacity: $opacity-end;
-			transform: #{$scale-end} #{$translate-end};
-			transform-origin: #{$origin-end};
-		}
+		@include zoomOutRight();
 	}
 
 	.#{$animate-name} {
