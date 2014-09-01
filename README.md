@@ -74,7 +74,7 @@ Add animate-sass to your project using [Bower](http://bower.io)
 bower.json dependency
 ````
 "dependencies": {
-  "animate-sass": "0.5.0"
+  "animate-sass": "0.6.0"
 }
 ````
 
