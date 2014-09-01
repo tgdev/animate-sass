@@ -74,7 +74,7 @@ Add animate-sass to your project using [Bower](http://bower.io)
 bower.json dependency
 ````
 "dependencies": {
-  "animate-sass": "0.4.0"
+  "animate-sass": "0.5.0"
 }
 ````
 
@@ -124,6 +124,8 @@ You can [check out the original animate.css here](http://daneden.me/animate). Se
 
 
 ##Changelog
+
+v0.6.0 - Merged pull request adding new animations. Updating bower version.
 
 v0.5.0 - Merged various pull requests to fix issues with 3rd party frameworks Bourbon and Libsass.
 
