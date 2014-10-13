@@ -6,7 +6,7 @@
     "Tom Gillard <tomgillar@gmail.com>"
   ],
   "description": "A Sass library of Dan Eden's Animate.css",
-  "main": "animate.scss",
+  "main": "_animate.scss",
   "keywords": [
     "animate-sass",
     "animate.css",
