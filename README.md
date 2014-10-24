@@ -74,7 +74,7 @@ Add animate-sass to your project using [Bower](http://bower.io)
 bower.json dependency
 ````
 "dependencies": {
-  "animate-sass": "0.6.0"
+  "animate-sass": "0.6.2"
 }
 ````
 
@@ -124,6 +124,10 @@ You can [check out the original animate.css here](http://daneden.me/animate). Se
 
 
 ##Changelog
+
+v0.6.2 - Fixed mixin issue with Firefox and IE adding quotes to the animation-name property.
+
+v0.6.1 - Merged pull request fixing issue with animate filename
 
 v0.6.0 - Merged pull request adding new animations. Updating bower version.
 

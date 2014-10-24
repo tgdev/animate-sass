@@ -6,18 +6,17 @@
 //          Automatically add vendor prefixes in one hit         //
 //===============================================================//
 //      .fadeIn {                                                //
-//          @include animate-prefixer(animation, fadeIn);        //
+//          @include animate-prefixer(animation, 'fadeIn');        //
 //      }                                                        //
 //===============================================================//
 //                                                               //
 //===============================================================//
 @mixin animate-prefixer($property, $value...) {
-    -webkit-#{$property}:$value;
-       -moz-#{$property}:$value;
-         -o-#{$property}:$value;
-            #{$property}:$value;
+    -webkit-#{$property}: unquote($value);
+    -moz-#{$property}: unquote($value);
+    -o-#{$property}: unquote($value);
+    #{$property}: unquote($value);
 }
-
 //===============================================================//
 // Generate keyframes animations with vendor prefixes in one hit //
 //===============================================================//
