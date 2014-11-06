@@ -25,7 +25,7 @@ By only choosing the animation modules you need, you're keeping the compiled css
 Eg:
 ````
 // These will be included
-$use-FadeIn: true;
+$use-fadeIn: true;
 $use-fadeOut: true;
 ````
 
