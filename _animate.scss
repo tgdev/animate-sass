@@ -71,6 +71,14 @@
 	"animations/rotate-exit/rotateOutUpRight";
 
 // SLIDE
+@import "animations/slide-enter/slideInDown",
+	"animations/slide-enter/slideInLeft",
+	"animations/slide-enter/slideInRight",
+	"animations/slide-enter/slideInUp",
+	"animations/slide-exit/slideOutDown",
+	"animations/slide-exit/slideOutLeft",
+	"animations/slide-exit/slideOutRight",
+	"animations/slide-exit/slideOutUp";
 
 // SPECIAL
 @import "animations/special/hinge",
