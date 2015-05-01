@@ -104,6 +104,20 @@ $use-rotateOutDownLeft 	: 	false !default;
 $use-rotateOutDownRight : 	false !default;
 
 
+// Slide Enter
+$use-slideIn			:   false !default;
+$use-slideInUp			:   false !default;
+$use-slideInDown		:   false !default;
+$use-slideInLeft		:   false !default;
+$use-slideInRight		:   false !default;
+
+// Slide Exit
+$use-slideOut			:   false !default;
+$use-slideOutUp			:   false !default;
+$use-slideOutDown		:   false !default;
+$use-slideOutLeft		:   false !default;
+$use-slideOutRight		:   false !default;
+
 // Flippers
 $use-flip				:	false !default;
 $use-flipInX			:	false !default;
