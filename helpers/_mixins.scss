@@ -6,7 +6,7 @@
 //          Automatically add vendor prefixes in one hit         //
 //===============================================================//
 //      .fadeIn {                                                //
-//          @include animate-prefixer(animation, 'fadeIn');        //
+//          @include animate-prefixer(animation, 'fadeIn');      //
 //      }                                                        //
 //===============================================================//
 //                                                               //
@@ -19,7 +19,7 @@
 // Generate keyframes animations with vendor prefixes in one hit //
 //===============================================================//
 //      .fadeIn {                                                //
-//          @include animate-prefixer(animation, fadeIn);        //
+//          @include animate-prefixer(animation, 'fadeIn');      //
 //      }                                                        //
 //      @include animate-keyframe(fadeIn) {                      //
 //          0% {opacity: 0;}                                     //
