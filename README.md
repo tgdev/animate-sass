@@ -8,6 +8,10 @@ animate-sass has a couple of features to make the most of what Sass has to offer
 
 ###Helpers
 
+####Base Styles
+
+The `_animate.scss` file includes a base sass file that contains the base css rules for animate.sass to work.
+
 ####Mixins
 There are a couple of [Sass mixins](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#mixins) that some of the modules use to generate the necessary compiled css.
 
@@ -43,26 +47,6 @@ Modules are arranged by the following animation types;
 - special
 
 
-####Base Styles
-
-There is a small section at the bottom of the `_animate.scss` file that contains the base css rules for animate.sass to work.
-
-Simply copy it from the `_animate.scss` file (or from the code block below) into you main sass file or base sass module.
-
-````
-body {
-	-webkit-backface-visibility: hidden; // Addresses a small issue in webkit: http://bit.ly/NEdoDq
-}
-.animated {
-	@include animate-prefixer(animation-duration, $base-duration);
-	@include animate-prefixer(animation-fill-mode, both);
-
-	&.hinge {
-		@include animate-prefixer(animation-duration, $base-duration * 2);
-	}
-}
-
-````
 
 ###Animations
 
