@@ -14,34 +14,6 @@
 		}
 	}
 
-	@-moz-keyframes rotateOutUpLeft {
-		0% {
-			-moz-transform-origin: left bottom;
-			-moz-transform: rotate(0);
-			opacity: 1;
-		}
-
-		100% {
-			-moz-transform-origin: left bottom;
-			-moz-transform: rotate(-$rotate-degrees);
-			opacity: 0;
-		}
-	}
-
-	@-o-keyframes rotateOutUpLeft {
-		0% {
-			-o-transform-origin: left bottom;
-			-o-transform: rotate(0);
-			opacity: 1;
-		}
-
-		100% {
-			-o-transform-origin: left bottom;
-			-o-transform: rotate(-$rotate-degrees);
-			opacity: 0;
-		}
-	}
-
 	@keyframes rotateOutUpLeft {
 		0% {
 			transform-origin: left bottom;

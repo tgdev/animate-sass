@@ -13,32 +13,7 @@
 			opacity: 1;
 		}
 	}
-	@-moz-keyframes rotateIn {
-		0% {
-			-moz-transform-origin: $rotate-origin;
-			-moz-transform: rotate(-$rotate-degrees-max);
-			opacity: 0;
-		}
 
-		100% {
-			-moz-transform-origin: $rotate-origin;
-			-moz-transform: rotate(0);
-			opacity: 1;
-		}
-	}
-	@-o-keyframes rotateIn {
-		0% {
-			-o-transform-origin: $rotate-origin;
-			-o-transform: rotate(-$rotate-degrees-max);
-			opacity: 0;
-		}
-
-		100% {
-			-o-transform-origin: $rotate-origin;
-			-o-transform: rotate(0);
-			opacity: 1;
-		}
-	}
 	@keyframes rotateIn {
 		0% {
 			transform-origin: $rotate-origin;
