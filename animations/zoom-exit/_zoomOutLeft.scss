@@ -19,14 +19,6 @@ $animate-name: 'zoomOutLeft';
 		@include zoomOutLeft('-webkit-');
 	}
 
-	@-moz-keyframes #{$animate-name} {
-		@include zoomOutLeft('-moz-');
-	}
-
-	@-o-keyframes #{$animate-name} {
-		@include zoomOutLeft('-o-');
-	}
-
 	@keyframes #{$animate-name} {
 		@include zoomOutLeft();
 	}

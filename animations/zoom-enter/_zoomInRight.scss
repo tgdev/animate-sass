@@ -20,14 +20,6 @@ $animate-name: 'zoomInRight';
 		@include zoomInRight('-webkit-');
 	}
 
-	@-moz-keyframes #{$animate-name} {
-		@include zoomInRight('-moz-');
-	}
-
-	@-o-keyframes #{$animate-name} {
-		@include zoomInRight('-o-');
-	}
-
 	@keyframes #{$animate-name} {
 		@include zoomInRight();
 	}

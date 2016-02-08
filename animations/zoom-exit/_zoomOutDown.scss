@@ -21,14 +21,6 @@ $animate-name: 'zoomOutDown';
 		@include zoomOutDown('-webkit-');
 	}
 
-	@-moz-keyframes #{$animate-name} {
-		@include zoomOutDown('-moz-');
-	}
-
-	@-o-keyframes #{$animate-name} {
-		@include zoomOutDown('-o-');
-	}
-
 	@keyframes #{$animate-name} {
 		@include zoomOutDown();
 	}

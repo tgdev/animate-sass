@@ -17,14 +17,6 @@ $animate-name: 'zoomIn';
 		@include zoomIn('-webkit-');
 	}
 
-	@-moz-keyframes #{$animate-name} {
-		@include zoomIn('-moz-');
-	}
-
-	@-o-keyframes #{$animate-name} {
-		@include zoomIn('-o-');
-	}
-
 	@keyframes #{$animate-name} {
 		@include zoomIn();
 	}
