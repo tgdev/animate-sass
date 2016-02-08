@@ -12,30 +12,6 @@
 		}
 	}
 
-	@-moz-keyframes fadeInRightBig {
-		0% {
-			opacity: 0;
-			-moz-transform: translateX($base-distance-big * 2);
-		}
-
-		100% {
-			opacity: 1;
-			-moz-transform: translateX(0);
-		}
-	}
-
-	@-o-keyframes fadeInRightBig {
-		0% {
-			opacity: 0;
-			-o-transform: translateX($base-distance-big * 2);
-		}
-
-		100% {
-			opacity: 1;
-			-o-transform: translateX(0);
-		}
-	}
-
 	@keyframes fadeInRightBig {
 		0% {
 			opacity: 0;
