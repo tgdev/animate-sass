@@ -20,46 +20,6 @@
 		}
 	}
 
-	@-moz-keyframes flipInY {
-		0% {
-			-moz-transform: perspective($flipper-perspective) rotateY($flipper-degrees-max);
-			opacity: 0;
-		}
-
-		40% {
-			-moz-transform: perspective($flipper-perspective) rotateY(-$flipper-degrees);
-		}
-
-		70% {
-			-moz-transform: perspective($flipper-perspective) rotateY($flipper-degrees);
-		}
-
-		100% {
-			-moz-transform: perspective($flipper-perspective) rotateY(0deg);
-			opacity: 1;
-		}
-	}
-
-	@-o-keyframes flipInY {
-		0% {
-			-o-transform: perspective($flipper-perspective) rotateY($flipper-degrees-max);
-			opacity: 0;
-		}
-
-		40% {
-			-o-transform: perspective($flipper-perspective) rotateY(-$flipper-degrees);
-		}
-
-		70% {
-			-o-transform: perspective($flipper-perspective) rotateY($flipper-degrees);
-		}
-
-		100% {
-			-o-transform: perspective($flipper-perspective) rotateY(0deg);
-			opacity: 1;
-		}
-	}
-
 	@keyframes flipInY {
 		0% {
 			transform: perspective($flipper-perspective) rotateY($flipper-degrees-max);
@@ -84,4 +44,5 @@
 		@include animate-prefixer(backface-visibility, visible !important);
 		@include animate-prefixer(animation-name, flipInY);
 	}
+
 }

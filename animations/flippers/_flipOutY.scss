@@ -11,28 +11,6 @@
 		}
 	}
 
-	@-moz-keyframes flipOutY {
-		0% {
-			-moz-transform: perspective($flipper-perspective) rotateY(0deg);
-			opacity: 1;
-		}
-		100% {
-			-moz-transform: perspective($flipper-perspective) rotateY($flipper-degrees-max);
-			opacity: 0;
-		}
-	}
-
-	@-o-keyframes flipOutY {
-		0% {
-			-o-transform: perspective($flipper-perspective) rotateY(0deg);
-			opacity: 1;
-		}
-		100% {
-			-o-transform: perspective($flipper-perspective) rotateY($flipper-degrees-max);
-			opacity: 0;
-		}
-	}
-
 	@keyframes flipOutY {
 		0% {
 			transform: perspective($flipper-perspective) rotateY(0deg);
