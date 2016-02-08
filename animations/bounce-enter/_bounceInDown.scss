@@ -1,4 +1,5 @@
 @if $use-bounceInDown == true {
+
 	@-webkit-keyframes bounceInDown {
 		0% {
 			opacity: 0;
@@ -16,46 +17,6 @@
 
 		100% {
 			-webkit-transform: translateY(0);
-		}
-	}
-
-	@-moz-keyframes bounceInDown {
-		0% {
-			opacity: 0;
-			-moz-transform: translateY(-$base-distance-big * 2);
-		}
-
-		60% {
-			opacity: 1;
-			-moz-transform: translateY($base-distance * 3);
-		}
-
-		80% {
-			-moz-transform: translateY(-$base-distance);
-		}
-
-		100% {
-			-moz-transform: translateY(0);
-		}
-	}
-
-	@-o-keyframes bounceInDown {
-		0% {
-			opacity: 0;
-			-o-transform: translateY(-$base-distance-big * 2);
-		}
-
-		60% {
-			opacity: 1;
-			-o-transform: translateY($base-distance * 3);
-		}
-
-		80% {
-			-o-transform: translateY(-$base-distance);
-		}
-
-		100% {
-			-o-transform: translateY(0);
 		}
 	}
 
@@ -82,4 +43,5 @@
 	.bounceInDown {
 		@include animate-prefixer(animation-name, bounceInDown);
 	}
+
 }
