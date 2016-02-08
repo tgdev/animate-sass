@@ -13,8 +13,6 @@
 //===============================================================//
 @mixin animate-prefixer($property, $value...) {
     -webkit-#{$property}: unquote('#{$value}');
-    -moz-#{$property}: unquote('#{$value}');
-    -o-#{$property}: unquote('#{$value}');
     #{$property}: unquote('#{$value}');
 }
 //===============================================================//
@@ -33,14 +31,6 @@
 
 @mixin animate-keyframe($animation-name) {
     @-webkit-keyframes #{$animation-name} {
-        @content;
-    }
-
-    @-moz-keyframes #{$animation-name} {
-        @content;
-    }
-
-    @-o-keyframes #{$animation-name} {
         @content;
     }
 
