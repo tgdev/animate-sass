@@ -109,13 +109,15 @@ You can [check out the original animate.css here](http://daneden.me/animate). Se
 
 ##Changelog
 
-v0.6.4 - Adding missing slide enter/exit animation modules
+v0.6.5 - Removed old vendor prefixes (-moz, -o) from all animations and mixin helper.
+
+v0.6.4 - Adding missing slide enter/exit animation modules.
 
 v0.6.3 - Removed Sass deprecation warnings about unquote().
 
 v0.6.2 - Fixed mixin issue with Firefox and IE adding quotes to the animation-name property.
 
-v0.6.1 - Merged pull request fixing issue with animate filename
+v0.6.1 - Merged pull request fixing issue with animate filename.
 
 v0.6.0 - Merged pull request adding new animations. Updating bower version.
 
@@ -123,8 +125,8 @@ v0.5.0 - Merged various pull requests to fix issues with 3rd party frameworks Bo
 
 v0.4.0 - Added override option of all variables. Made sass file a partial to be imported into projects stylesheet without generating a standalone css file. Removed base helper partial in favour of copying the css into projects sass stylesheet.
 
-v0.3.0 - Added bower package functionality
+v0.3.0 - Added bower package functionality.
 
-v0.2.0 - Removed css source files and restructured repo for better compatibility with user projects
+v0.2.0 - Removed css source files and restructured repo for better compatibility with user projects.
 
-v0.1.0 - Initial port of animate.css to Sass
+v0.1.0 - Initial port of animate.css to Sass.
