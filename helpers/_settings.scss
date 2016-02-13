@@ -47,118 +47,138 @@ $hinge-translate 				: 700px !default;
 // Hugely influenced and inspired by @csswizardry's inuit.css _vars.scss file                       //
 //==================================================================================================//
 
+$use-all                    :   false !default; // all animations status
+$use-fade               :   $use-all !default; // all fades
+$use-bounce             :   $use-all !default; // all bounces
+$use-rotate             :   $use-all !default; // all rotates
+$use-slide              :   $use-all !default; // all slide animations
+$use-flipers            :   $use-all !default; // all flip animations
+$use-light-speed        :   $use-all !default; // all light speed animations
+$use-attention-seekers  :   $use-all !default; // all attention seeker animations
+$use-special            :   $use-all !default; // all special animations
+$use-zoom               :   $use-all !default; // all zoom animations
 // Fade Enter
-$use-fadeIn 			:	false !default;
-$use-fadeInUp 			:	false !default;
-$use-fadeInUpBig 		:	false !default;
-$use-fadeInDown 		:	false !default;
-$use-fadeInDownBig 		:	false !default;
-$use-fadeInLeft 		:	false !default;
-$use-fadeInLeftBig 		:	false !default;
-$use-fadeInRight 		:	false !default;
-$use-fadeInRightBig 	:	false !default;
+$use-fade-in            :   $use-fade !default;
+$use-fadeIn 			:	$use-fade-in !default;
+$use-fadeInUp 			:	$use-fade-in !default;
+$use-fadeInUpBig 		:	$use-fade-in !default;
+$use-fadeInDown 		:	$use-fade-in !default;
+$use-fadeInDownBig 		:	$use-fade-in !default;
+$use-fadeInLeft 		:	$use-fade-in !default;
+$use-fadeInLeftBig 		:	$use-fade-in !default;
+$use-fadeInRight 		:	$use-fade-in !default;
+$use-fadeInRightBig 	:	$use-fade-in !default;
 
 
 // Fade Exit
-$use-fadeOut			:   false !default;
-$use-fadeOutUp			:	false !default;
-$use-fadeOutUpBig   	:	false !default;
-$use-fadeOutDown		:	false !default;
-$use-fadeOutDownBig 	:	false !default;
-$use-fadeOutLeft		:	false !default;
-$use-fadeOutLeftBig 	:	false !default;
-$use-fadeOutRight		:	false !default;
-$use-fadeOutRightBig	:	false !default;
+$use-fade-out           :   $use-fade !default;
+$use-fadeOut			:   $use-fade-out !default;
+$use-fadeOutUp			:	$use-fade-out !default;
+$use-fadeOutUpBig   	:	$use-fade-out !default;
+$use-fadeOutDown		:	$use-fade-out !default;
+$use-fadeOutDownBig 	:	$use-fade-out !default;
+$use-fadeOutLeft		:	$use-fade-out !default;
+$use-fadeOutLeftBig 	:	$use-fade-out !default;
+$use-fadeOutRight		:	$use-fade-out !default;
+$use-fadeOutRightBig	:	$use-fade-out !default;
 
 
 // Bounce Enter
-$use-bounceIn			:	false !default;
-$use-bounceInUp			: 	false !default;
-$use-bounceInDown 		: 	false !default;
-$use-bounceInLeft 		: 	false !default;
-$use-bounceInRight 		: 	false !default;
+$use-bounce-in          :   $use-bounce !default;
+$use-bounceIn			:	$use-bounce-in !default;
+$use-bounceInUp			: 	$use-bounce-in !default;
+$use-bounceInDown 		: 	$use-bounce-in !default;
+$use-bounceInLeft 		: 	$use-bounce-in !default;
+$use-bounceInRight 		: 	$use-bounce-in !default;
 
 
 // Bounce Exit
-$use-bounceOut			:	false !default;
-$use-bounceOutUp		: 	false !default;
-$use-bounceOutDown 		: 	false !default;
-$use-bounceOutLeft 		: 	false !default;
-$use-bounceOutRight 	: 	false !default;
+$use-bounce-out         :   $use-bounce !default;
+$use-bounceOut			:	$use-bounce-out !default;
+$use-bounceOutUp		: 	$use-bounce-out !default;
+$use-bounceOutDown 		: 	$use-bounce-out !default;
+$use-bounceOutLeft 		: 	$use-bounce-out !default;
+$use-bounceOutRight 	: 	$use-bounce-out !default;
 
 
 
 // Rotate Enter
-$use-rotateIn 			:	false !default;
-$use-rotateInUpLeft 	: 	false !default;
-$use-rotateInUpRight 	: 	false !default;
-$use-rotateInDownLeft 	: 	false !default;
-$use-rotateInDownRight 	: 	false !default;
+$use-rotate-in          :   $use-rotate !default;
+$use-rotateIn 			:	$use-rotate-in !default;
+$use-rotateInUpLeft 	: 	$use-rotate-in !default;
+$use-rotateInUpRight 	: 	$use-rotate-in !default;
+$use-rotateInDownLeft 	: 	$use-rotate-in !default;
+$use-rotateInDownRight 	: 	$use-rotate-in !default;
 
 
 // Rotate Exit
-$use-rotateOut 			:	false !default;
-$use-rotateOutUpLeft 	: 	false !default;
-$use-rotateOutUpRight 	: 	false !default;
-$use-rotateOutDownLeft 	: 	false !default;
-$use-rotateOutDownRight : 	false !default;
+$use-rotate-out         :   $use-rotate !default;
+$use-rotateOut 			:	$use-rotate-out !default;
+$use-rotateOutUpLeft 	: 	$use-rotate-out !default;
+$use-rotateOutUpRight 	: 	$use-rotate-out !default;
+$use-rotateOutDownLeft 	: 	$use-rotate-out !default;
+$use-rotateOutDownRight : 	$use-rotate-out !default;
 
 
 // Slide Enter
-$use-slideIn			:   false !default;
-$use-slideInUp			:   false !default;
-$use-slideInDown		:   false !default;
-$use-slideInLeft		:   false !default;
-$use-slideInRight		:   false !default;
+$use-slide-in           :   $use-slide !default;
+$use-slideIn			:   $use-slide-in !default;
+$use-slideInUp			:   $use-slide-in !default;
+$use-slideInDown		:   $use-slide-in !default;
+$use-slideInLeft		:   $use-slide-in !default;
+$use-slideInRight		:   $use-slide-in !default;
 
 // Slide Exit
-$use-slideOut			:   false !default;
-$use-slideOutUp			:   false !default;
-$use-slideOutDown		:   false !default;
-$use-slideOutLeft		:   false !default;
-$use-slideOutRight		:   false !default;
+$use-slide-out          :   $use-slide !default;
+$use-slideOut			:   $use-slide-out !default;
+$use-slideOutUp			:   $use-slide-out !default;
+$use-slideOutDown		:   $use-slide-out !default;
+$use-slideOutLeft		:   $use-slide-out !default;
+$use-slideOutRight		:   $use-slide-out !default;
 
 // Flippers
-$use-flip				:	false !default;
-$use-flipInX			:	false !default;
-$use-flipInY			:	false !default;
-$use-flipOutX			:	false !default;
-$use-flipOutY			:	false !default;
+$use-flip				:	$use-flipers !default;
+$use-flipInX			:	$use-flipers !default;
+$use-flipInY			:	$use-flipers !default;
+$use-flipOutX			:	$use-flipers !default;
+$use-flipOutY			:	$use-flipers !default;
 
 
 // Lightspeed
-$use-lightSpeedIn 		:	false !default;
-$use-lightSpeedOut 		:	false !default;
+$use-lightSpeedIn 		:	$use-light-speed !default;
+$use-lightSpeedOut 		:	$use-light-speed !default;
 
 
 // Attention Seekers
-$use-bounce				:	false !default;
-$use-flash				:	false !default;
-$use-pulse				:	false !default;
-$use-wiggle				:	false !default;
-$use-swing				:	false !default;
-$use-shake				:	false !default;
-$use-tada				:	false !default;
-$use-wobble				:	false !default;
+$use-bounce				:	$use-attention-seekers !default;
+$use-flash				:	$use-attention-seekers !default;
+$use-pulse				:	$use-attention-seekers !default;
+$use-wiggle				:	$use-attention-seekers !default;
+$use-swing				:	$use-attention-seekers !default;
+$use-shake				:	$use-attention-seekers !default;
+$use-tada				:	$use-attention-seekers !default;
+$use-wobble				:	$use-attention-seekers !default;
 
 
 // Special
-$use-hinge				:	false !default;
-$use-rollIn				: 	false !default;
-$use-rollOut 			:	false !default;
+$use-hinge				:	$use-special !default;
+$use-rollIn				: 	$use-special !default;
+$use-rollOut 			:	$use-special !default;
 
 
 // Zoom In
-$use-zoomIn 			:	false !default;
-$use-zoomInDown 		:	false !default;
-$use-zoomInLeft 		:	false !default;
-$use-zoomInRight 		:	false !default;
-$use-zoomInUp 			:	false !default;
+$use-zoom-in            :   $use-zoom !default;
+$use-zoomIn 			:	$use-zoom-in !default;
+$use-zoomInDown 		:	$use-zoom-in !default;
+$use-zoomInLeft 		:	$use-zoom-in !default;
+$use-zoomInRight 		:	$use-zoom-in !default;
+$use-zoomInUp 			:	$use-zoom-in !default;
 
 
 // Zoom Out
-$use-zoomOut			:	false !default;
-$use-zoomOutDown		:	false !default;
-$use-zoomOutLeft		:	false !default;
-$use-zoomOutRight		:	false !default;
-$use-zoomOutUp			:	false !default;
+$use-zoom-out           :   $use-zoom !default;
+$use-zoomOut			:	$use-zoom-out !default;
+$use-zoomOutDown		:	$use-zoom-out !default;
+$use-zoomOutLeft		:	$use-zoom-out !default;
+$use-zoomOutRight		:	$use-zoom-out !default;
+$use-zoomOutUp			:	$use-zoom-out !default;
