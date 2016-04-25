@@ -1,0 +1,19 @@
+{
+  "name": "animate-sass",
+  "version": "0.6.6",
+  "description": "animate-sass is a Sass version of Dan Eden's Animate.css.",
+  "main": "_animate.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgdev/animate-sass.git"
+  },
+  "author": "Tom Gillard <tomgillar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tgdev/animate-sass/issues"
+  },
+  "homepage": "https://github.com/tgdev/animate-sass#readme"
+}
