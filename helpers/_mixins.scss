@@ -38,3 +38,40 @@
         @content;
     }
 }
+
+//===============================================================//
+// Customize pre-existing animations and create one-offs         //
+//===============================================================//
+//      .fadeInSlow {                                            //
+//          @include animate-custom(fadeIn, 4s);                 //
+//      }                                                        //
+//===============================================================//
+// Courtesy of @aviladotandres: (twitter.com)                    //
+//===============================================================//
+@mixin animate-custom( $name,
+        $duration:$base-duration,
+        $delay:false,
+        $direction:false,
+        $fill:false,
+        $count:false,
+        $state:false ) {
+    animation-name: $name;
+    @if $duration {
+      @include animate-prefixer(animation-duration, $duration);
+    }
+    @if $delay {
+      @include animate-prefixer(animation-delay, $delay);
+    }
+    @if $direction {
+      @include animate-prefixer(animation-direction, $direction);
+    }
+    @if $fill {
+      @include animate-prefixer(animation-fill-mode, $fill);
+    }
+    @if $count {
+      @include animate-prefixer(animation-iteration-count, $count);
+    }
+    @if $state {
+      @include animate-prefixer(animation-play-state, $state);
+    }
+}
