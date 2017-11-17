@@ -1,6 +1,6 @@
 {
   "name": "animate-sass",
-  "version": "0.6.6",
+  "version": "0.8.2",
   "description": "animate-sass is a Sass version of Dan Eden's Animate.css.",
   "main": "_animate.scss",
   "scripts": {
